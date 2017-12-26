@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
+@extends('layout')
 
-
-    </head>
-
-    <body>
-
-
-    </body>
-
-</html>
+@section('content')
+    <h3>Home</h3>
+@endsection
