@@ -1,48 +1,25 @@
-<nav class="navbar navbar-default navbar-fixed-top col-md-12">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-        <span class="sr-only">Toggle Navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
 
-    <a class="navbar-brand" href="/"><h4>FS</h4></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-    <div class="collapse navbar-collapse" id="app-navbar-collapse">
-    <ul class="nav navbar-nav">
-        <li>
-            <a href="">
-                <h4>What I Do</h4>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <h4>Who I Am</h4>
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <h4>Contact Me</h4>
-            </a>
-        </li>
-    </ul>
-    </div>
+            <a class="navbar-brand" href="#">FS</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">What I Do</a></li>
+                <li><a href="#">Who I Am</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
 </nav>
-<style>
-
-nav {
-    background-color: white !important;
-}
-
-.navbar {
-    height: 70px;
-}
-
-h4 {
-    font-size: 20px;
-}
-
-</style>
-<script>
-
-</script>
