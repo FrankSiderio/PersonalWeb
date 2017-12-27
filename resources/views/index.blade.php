@@ -9,9 +9,7 @@
 
         <img src="../images/philly.jpg"/>
 
-        <div class="hero-text">
-            <h1>Hi, I'm Frank.</h1>
-            <h3>I am a computer science major from the Philadelphia area and an adovacate for all Philly sports. 🦅 🔔 ⚾ 🏒</h3>
+        <div id="person">
         </div>
 
     </div>

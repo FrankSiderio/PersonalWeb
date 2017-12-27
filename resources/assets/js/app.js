@@ -14,3 +14,4 @@ require('./bootstrap');
  */
 
 require('./components/WorkExperiences');
+require('./components/Person');
