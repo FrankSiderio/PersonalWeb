@@ -12,7 +12,7 @@ export default class WorkExperiences extends Component {
     }
 
     async fetchExperiences() {
-        fetch('http://localhost:3333/work/1').then((response) => {
+        fetch('http://localhost:3333/api/work/1').then((response) => {
             return response.json();
         }).then((json) => {
             if(json) {
@@ -27,15 +27,20 @@ export default class WorkExperiences extends Component {
 
     render() {
         return (
-            <div className="container">
-                {this.state.experiences.map((exp, index) => {
-                    return <WorkExperience key={index} position={exp.position} company={exp.company} description={exp.description}/>
-                })}
+            <div className="top-section">
+                <div className="heading">
+                    <h2 className="section-text">A little bit about what I do.</h2>
+                </div>
+                <div className="rule-of-thirds container">
+                    {this.state.experiences.map((exp, index) => {
+                        return <WorkExperience key={index} position={exp.position} company={exp.company} description={exp.description} imagepath={exp.imagepath}/>
+                    })}
+                </div>
             </div>
         );
     }
 }
 
-if (document.getElementById('example')) {
-    ReactDOM.render(<WorkExperiences />, document.getElementById('example'));
+if (document.getElementById('work-experience')) {
+    ReactDOM.render(<WorkExperiences />, document.getElementById('work-experience'));
 }

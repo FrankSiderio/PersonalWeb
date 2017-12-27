@@ -8,9 +8,14 @@ export default class WorkExperiences extends Component {
 
     render() {
         return (
-            <div className="work-experience">
-                <h1>{this.props.position} at {this.props.company}</h1>
-                <p>{this.props.description}</p>
+            <div className="one-third">
+                <img className="image" src={this.props.imagepath}/>
+
+                <div className="one-third-body">
+                    <h4>{this.props.position} at {this.props.company}</h4>
+                    <p className="description">{this.props.description}</p>
+                    <a className="navy-btn btn-component" href="/">Learn More</a>
+                </div>
             </div>
         );
     }
