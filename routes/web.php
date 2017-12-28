@@ -18,7 +18,3 @@ Route::get('/', function () {
 Route::get('/home', function() {
     return view('index');
 });
-
-Route::get('/nav', function() {
-    return view('partials.nav');
-});
