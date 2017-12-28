@@ -41,7 +41,13 @@ img {
 
 .section-text {
     display: inline-block;
-    border-bottom: 2px solid black;
+    border: 1.5px solid black;
+    padding: 5px;
+}
+
+.name {
+    display: inline-block;
+    border-bottom: 1.5px solid black;
 }
 
 /* Rule of thirds fun times */

@@ -17,6 +17,10 @@
     <div id="work-experience">
     </div>
 
+    <div id="projects">
+    </div>
+
+    <!--
     <div class="bottom-section">
 
         <div class="heading">
@@ -52,7 +56,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <div class="contact">
         <a class="navy-btn btn-component" href="/">Contact Me</a>
