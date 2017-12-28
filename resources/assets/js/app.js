@@ -16,3 +16,4 @@ require('./bootstrap');
 require('./components/WorkExperiences');
 require('./components/Person');
 require('./components/Projects');
+require('./components/ContactForm');

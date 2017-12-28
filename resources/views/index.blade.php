@@ -21,10 +21,11 @@
     </div>
 
     <div class="contact">
-        <a class="navy-btn btn-component" href="/">Contact Me</a>
+        <a class="navy-btn btn-component" href="/contact">Contact Me</a>
     </div>
 
     <hr></hr>
+    
     <script src="{{asset('js/app.js')}}" ></script>
 
 @endsection

@@ -8,13 +8,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">FS</a>
+      <a class="navbar-brand" href="/">FS</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li><a href="#">What I Do</a></li>
         <li><a href="#">Who I Am</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <li><a href="/contact">Contact Me</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
