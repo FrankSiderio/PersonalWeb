@@ -1,0 +1,35 @@
+.top {
+    text-align: center;
+    background-color: #eeeeee;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+input, textarea, .status {
+    width: 40% !important;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.status {
+    padding-top: 10px;
+}
+
+textarea {
+    height: 200px !important;
+}
+
+button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 750px) {
+    input, textarea, .status {
+        width: 60% !important;
+    }
+
+}
