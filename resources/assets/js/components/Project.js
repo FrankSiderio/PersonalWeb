@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export default class WorkExperiences extends Component {
+export default class Project extends Component {
     constructor(props) {
         super(props);
     }
@@ -12,7 +12,7 @@ export default class WorkExperiences extends Component {
                 <img className="image" src={this.props.imagePath}/>
 
                 <div className="one-third-body">
-                    <h4 className="name">{this.props.position} at {this.props.company}</h4>
+                    <h4>{this.props.name}</h4>
                     <p className="description">{this.props.description}</p>
                     <a className="navy-btn btn-component" href="/">Learn More</a>
                 </div>

@@ -1,5 +1,30 @@
 @extends('layout')
 
+@section('css')
+    <link href="{{ asset('css/index.css') }}" rel="stylesheet" type="text/css">
+@endsection
+
 @section('content')
-    <h3>Home</h3>
+    <div class="hero-section">
+
+        <img src="../images/philly.jpg"/>
+
+        <div id="person">
+        </div>
+
+    </div>
+
+    <div id="work-experience">
+    </div>
+
+    <div id="projects">
+    </div>
+
+    <div class="contact">
+        <a class="navy-btn btn-component" href="/">Contact Me</a>
+    </div>
+
+    <hr></hr>
+    <script src="{{asset('js/app.js')}}" ></script>
+
 @endsection
