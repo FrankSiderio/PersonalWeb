@@ -2,11 +2,6 @@ h1, h3 {
     color: white;
 }
 
-img {
-    width: 100%;
-    vertical-align: middle;
-}
-
 @media (max-width: 431px) {
     h1 {
         font-size: 25px;
@@ -32,11 +27,6 @@ img {
 }
 
 /* top hero section */
-.hero-section {
-    position: relative;
-    text-align: center;
-}
-
 .hero-text {
     position: absolute;
     top: 50%;
@@ -44,16 +34,6 @@ img {
     transform: translate(-50%, -50%);
 }
 /* end top hero section */
-
-.heading {
-    text-align: center;
-}
-
-.section-text {
-    display: inline-block;
-    border-top: 1.5px solid black;
-    padding: 5px;
-}
 
 .name {
     display: inline-block;

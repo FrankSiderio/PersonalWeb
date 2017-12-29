@@ -1,0 +1,73 @@
+body {
+    background-color: #eeeeee !important;
+}
+
+.section {
+    padding-bottom: 20px;
+}
+
+/* Begin card */
+.card-container {
+    align-self: start;
+    justify-self: center;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+}
+
+.card {
+    background-color: #bcbcbc;
+    box-shadow: 0 10px 10px lightgray;
+}
+
+.img-responsive {
+    /* All images should be the same height...its important :)*/
+    /*height: 250px !important;*/
+}
+
+.text {
+    /* Give the text some space */
+    padding-top: 5px;
+    /* Add some more space on the bottom for the description */
+    padding-bottom: 25px;
+    text-align: center;
+
+    /* Push the text towards the middle some more */
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+/* Now lets make it super response */
+@media (max-width: 1200px) {
+    .card-container {
+        /* Changing to three columns */
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .img-responsive {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 990px) {
+    .card-container {
+        grid-gap: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .card-container {
+        /* Changing to two columns */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 470px) {
+    .card-container {
+        /* Changing to one column */
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* End card */

@@ -35,3 +35,31 @@ nav {
     border: 2px solid black;
 }
 /* End button */
+
+/* top hero section */
+.hero-section {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+}
+/* End hero section */
+
+.heading {
+    /* Text for the heading */
+    text-align: center;
+}
+
+.name {
+    display: inline-block;
+    border-bottom: 1.5px solid black;
+    padding: 5px;
+}
+
+.section-text {
+    display: inline-block;
+    border-top: 1.5px solid black;
+    padding: 5px;
+}

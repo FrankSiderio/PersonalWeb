@@ -7,7 +7,7 @@
 @section('content')
     <div class="hero-section">
 
-        <img src="../images/philly.jpg"/>
+        <img class="hero-image" src="../images/philly.jpg"/>
 
         <div id="person">
         </div>
@@ -25,7 +25,7 @@
     </div>
 
     <hr></hr>
-    
+
     <script src="{{asset('js/app.js')}}" ></script>
 
 @endsection
