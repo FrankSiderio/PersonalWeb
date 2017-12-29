@@ -12,7 +12,7 @@ export default class Project extends Component {
                 <img className="image" src={this.props.imagePath}/>
 
                 <div className="one-third-body">
-                    <h4>{this.props.name}</h4>
+                    <h4 className="name">{this.props.name}</h4>
                     <p className="description">{this.props.description}</p>
                     <a className="navy-btn btn-component" href="/">Learn More</a>
                 </div>

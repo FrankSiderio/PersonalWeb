@@ -54712,7 +54712,7 @@ var Project = function (_Component) {
                     { className: 'one-third-body' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'h4',
-                        null,
+                        { className: 'name' },
                         this.props.name
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(

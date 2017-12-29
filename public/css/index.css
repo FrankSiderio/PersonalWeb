@@ -18,6 +18,16 @@ img {
 
     .hero-text {
         margin-top: 15px;
+        padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    h3 {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 22px;
     }
 }
 
@@ -41,13 +51,14 @@ img {
 
 .section-text {
     display: inline-block;
-    border: 1.5px solid black;
+    border-top: 1.5px solid black;
     padding: 5px;
 }
 
 .name {
     display: inline-block;
     border-bottom: 1.5px solid black;
+    padding: 5px;
 }
 
 /* Rule of thirds fun times */
@@ -70,6 +81,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 @media (max-width: 700px) {
@@ -91,6 +103,16 @@ img {
 
     .one-third-body .inline-header {
         margin-top: 0;
+    }
+
+    .one-third-body {
+        text-align: center;
+        padding-left: 7px;
+    }
+
+    .btn-component {
+        padding: 10px 10px;
+        min-width: 100px;
     }
 }
 
