@@ -3,6 +3,7 @@
     <div class="col-md-6">
         <h4>Site Map</h4>
         <a href="/">Home</a><br>
+        <a href="/about">About</a><br>
         <a href="">Work Experience</a><br>
         <a href="">Projects</a><br>
         <a href="">Skills</a><br>
