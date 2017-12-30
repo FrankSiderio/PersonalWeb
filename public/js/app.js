@@ -41721,7 +41721,7 @@ var WorkExperiences = function (_Component) {
                     'div',
                     { className: 'rule-of-thirds container' },
                     this.state.experiences.map(function (exp, index) {
-                        return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__WorkExperience__["a" /* default */], { key: index, position: exp.position, company: exp.company, description: exp.description, imagePath: exp.imagePath });
+                        return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__WorkExperience__["a" /* default */], { key: index, position: exp.position, company: exp.company, description: exp.preview, imagePath: exp.imagePath });
                     })
                 )
             );
@@ -54655,7 +54655,7 @@ var Projects = function (_Component) {
                     'div',
                     { className: 'rule-of-thirds container' },
                     this.state.projects.map(function (project, index) {
-                        return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Project__["a" /* default */], { key: index, name: project.name, description: project.description, imagePath: project.imagePath });
+                        return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Project__["a" /* default */], { key: index, name: project.name, description: project.preview, imagePath: project.imagePath });
                     })
                 )
             );
