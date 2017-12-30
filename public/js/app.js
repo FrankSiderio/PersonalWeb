@@ -54433,7 +54433,7 @@ var WorkExperiences = function (_Component) {
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'a',
-                        { className: 'navy-btn btn-component', href: '/' },
+                        { className: 'navy-btn btn-component', href: '/experience/#' + this.props.company },
                         'Learn More'
                     )
                 )
