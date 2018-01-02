@@ -12,7 +12,7 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a href="#">What I Do</a></li>
+        <li><a href="/experience">What I Do</a></li>
         <li><a href="/about">Who I Am</a></li>
         <li><a href="/contact">Contact Me</a></li>
       </ul>

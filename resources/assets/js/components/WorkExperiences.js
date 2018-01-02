@@ -33,7 +33,7 @@ export default class WorkExperiences extends Component {
                 </div>
                 <div className="rule-of-thirds container">
                     {this.state.experiences.map((exp, index) => {
-                        return <WorkExperience key={index} position={exp.position} company={exp.company} description={exp.description} imagePath={exp.imagePath}/>
+                        return <WorkExperience key={index} position={exp.position} company={exp.company} description={exp.preview} imagePath={exp.imagePath}/>
                     })}
                 </div>
             </div>

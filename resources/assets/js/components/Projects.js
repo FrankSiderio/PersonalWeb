@@ -33,7 +33,7 @@ export default class Projects extends Component {
                 </div>
                 <div className="rule-of-thirds container">
                     {this.state.projects.map((project, index) => {
-                        return <Project key={index} name={project.name} description={project.description} imagePath={project.imagePath}/>
+                        return <Project key={index} name={project.name} description={project.preview} imagePath={project.imagePath}/>
                     })}
                 </div>
             </div>
