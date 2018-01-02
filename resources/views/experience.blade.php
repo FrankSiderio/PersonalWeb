@@ -17,7 +17,7 @@
 
     </div>
 
-    <div class="heading">
+    <div id="Work" class="heading">
         <h2 class="section-text">My work experience</h2>
     </div>
 
@@ -27,6 +27,7 @@
                 <div class="content">
                     <h2 class="name">Developer at Wawa</h2>
                     <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk fksldjfkfksldjfk fksldjfk fksldjfk fksldjfk fksldjfk fksldjfk fksldjfk.</p>
+                    <br><a class="button btn-component" href="">See Project</a>
                 </div>
 
                 <div class="image-container">
@@ -41,6 +42,7 @@
                 <div class="content">
                     <h2 class="name">CIO at Marist SGA</h2>
                     <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk.</p>
+                    <br><a class="button btn-component" href="">See Project</a>
                 </div>
 
                 <div class="image-container">
@@ -55,6 +57,7 @@
                 <div class="content">
                     <h2 class="name">Instructor at iD Tech</h2>
                     <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk.</p>
+                    <br><a class="button btn-component" href="">See Project</a>
                 </div>
 
                 <div class="image-container">
@@ -64,7 +67,7 @@
         </div>
     </div>
 
-    <div class="heading">
+    <div id="Projects" class="heading">
         <h2 class="section-text">My projects</h2>
     </div>
 
@@ -74,6 +77,7 @@
                 <div class="content">
                     <h2 class="name">Operating System</h2>
                     <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk fksldjfkfksldjfk fksldjfk fksldjfk fksldjfk fksldjfk fksldjfk fksldjfk.</p>
+                    <br><a class="button btn-component" href="">See Project</a>
                 </div>
 
                 <div class="image-container">
@@ -88,6 +92,7 @@
                 <div class="content">
                     <h2 class="name">Capping</h2>
                     <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk.</p>
+                    <br><a class="button btn-component" href="">See Project</a>
                 </div>
 
                 <div class="image-container">
@@ -102,6 +107,7 @@
                 <div class="content">
                     <h2 class="name">MLB Scoreboard</h2>
                     <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk.</p>
+                    <br><a class="button btn-component" href="">See Project</a>
                 </div>
 
                 <div class="image-container">

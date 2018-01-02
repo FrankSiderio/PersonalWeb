@@ -54433,7 +54433,7 @@ var WorkExperiences = function (_Component) {
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'a',
-                        { className: 'navy-btn btn-component', href: '/experience/#' + this.props.company },
+                        { className: 'button btn-component', href: '/experience/#' + this.props.company },
                         'Learn More'
                     )
                 )
@@ -54539,7 +54539,7 @@ var Person = function (_Component) {
                 ),
                 __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
                     'h3',
-                    null,
+                    { className: 'flavor-text' },
                     'I am a computer science major from the Philadelphia area and an adovacate for all Philly sports. \uD83E\uDD85 \uD83D\uDD14 \u26BE \uD83C\uDFD2'
                 )
             );
@@ -54723,7 +54723,7 @@ var Project = function (_Component) {
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'a',
-                        { className: 'navy-btn btn-component', href: '/' },
+                        { className: 'button btn-component', href: '/experience/#' + this.props.name },
                         'Learn More'
                     )
                 )
@@ -54864,7 +54864,7 @@ var ContactForm = function (_Component) {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('textarea', { className: 'form-control message-box', placeholder: 'Feedback', value: this.state.message, onChange: this.handleChange.bind(this, 'message'), required: true }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'button',
-                    { type: 'submit', className: 'navy-btn btn-component' },
+                    { type: 'submit', className: 'button btn-component' },
                     'Send'
                 )
             );

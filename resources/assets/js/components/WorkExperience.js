@@ -14,7 +14,7 @@ export default class WorkExperiences extends Component {
                 <div className="one-third-body">
                     <h4 className="name">{this.props.position} at {this.props.company}</h4>
                     <p className="description">{this.props.description}</p>
-                    <a className="navy-btn btn-component" href={'/experience/#' + this.props.company}>Learn More</a>
+                    <a className="button btn-component" href={'/experience/#' + this.props.company}>Learn More</a>
                 </div>
             </div>
         );

@@ -14,7 +14,7 @@ export default class Project extends Component {
                 <div className="one-third-body">
                     <h4 className="name">{this.props.name}</h4>
                     <p className="description">{this.props.description}</p>
-                    <a className="navy-btn btn-component" href="/">Learn More</a>
+                    <a className="button btn-component" href={'/experience/#' + this.props.name}>Learn More</a>
                 </div>
             </div>
         );

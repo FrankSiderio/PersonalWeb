@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('css')
-    <link href="{{ asset('css/interests.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/about.css') }}" rel="stylesheet" type="text/css">
 @endsection('css')
 
 @section('content')
@@ -11,9 +11,7 @@
 
         <div class="hero-text">
             <h1>Who I Am.</h1>
-            <div class="about">
-                <h3 class="flavor-text">I grew up going to the Jersey shore every summer but thats only one of my many interests. Scroll to see more.</h3>
-            </div>
+            <h3 class="flavor-text">I grew up going to the Jersey shore every summer but thats only one of my many interests. Scroll to see more.</h3>
         </div>
 
     </div>

@@ -21,7 +21,7 @@
     </div>
 
     <div class="contact">
-        <a class="navy-btn btn-component" href="/contact">Contact Me</a>
+        <a class="button btn-component" href="/contact">Contact Me</a>
     </div>
 
     <hr></hr>
