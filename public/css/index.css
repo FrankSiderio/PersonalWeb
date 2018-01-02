@@ -35,12 +35,6 @@ h1, h3 {
 }
 /* end top hero section */
 
-.name {
-    display: inline-block;
-    border-bottom: 1.5px solid black;
-    padding: 5px;
-}
-
 /* Rule of thirds fun times */
 .rule-of-thirds {
     display: flex;
