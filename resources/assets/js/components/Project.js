@@ -9,7 +9,7 @@ export default class Project extends Component {
     render() {
         return (
             <div className="one-third">
-                <img className="image" src={this.props.imagePath}/>
+                <img className="img-responsive" src={this.props.imagePath}/>
 
                 <div className="one-third-body">
                     <h4 className="name">{this.props.name}</h4>

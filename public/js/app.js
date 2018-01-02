@@ -54415,7 +54415,7 @@ var WorkExperiences = function (_Component) {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'one-third' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'image', src: this.props.imagePath }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-responsive', src: this.props.imagePath }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'one-third-body' },
@@ -54707,7 +54707,7 @@ var Project = function (_Component) {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'div',
                 { className: 'one-third' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'image', src: this.props.imagePath }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'img-responsive', src: this.props.imagePath }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'div',
                     { className: 'one-third-body' },
