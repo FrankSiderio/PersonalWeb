@@ -16,7 +16,6 @@ export default class Person extends Component {
         }).then((json) => {
             if(json) {
                 this.setState({person: json.person});
-                console.log(this.state.person[0].firstName);
             }
         });
     }
@@ -30,7 +29,7 @@ export default class Person extends Component {
         return (
             <div className="hero-text">
                 <h1>Hi, I'm Frank.</h1>
-                <h3>I am a computer science major from the Philadelphia area and an adovacate for all Philly sports. 🦅 🔔 ⚾ 🏒</h3>
+                <h3 className="flavor-text">I am a computer science major from the Philadelphia area and an adovacate for all Philly sports. 🦅 🔔 ⚾ 🏒</h3>
             </div>
         )
     }

@@ -64,7 +64,7 @@ h1, h3 {
     }
 }
 
-@media (max-width: 635px) {
+@media (max-width: 750px) {
     .rule-of-thirds {
         flex-direction: column;
     }
@@ -92,6 +92,7 @@ h1, h3 {
 
 .rule-of-thirds img {
     max-width: 200px;
+    width: 100%;
 }
 
 .rule-of-thirds p {

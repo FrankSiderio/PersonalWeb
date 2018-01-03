@@ -6,49 +6,6 @@ body {
     padding-bottom: 20px;
 }
 
-.hero-text {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.about {
-    margin-right: 100px;
-    margin-left: 100px;
-}
-
-@media (max-width: 724px) {
-    .about {
-        margin-right: 50px;
-        margin-left: 50px;
-    }
-}
-
-@media (max-width: 592px) {
-    .about {
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-
-    .flavor-text {
-        font-size: 17px;
-    }
-}
-
-@media (max-width: 400px) {
-    .about {
-        margin-right: 20px;
-        margin-left: 20px;
-        padding-bottom: 10px;
-    }
-
-    .flavor-text {
-        font-size: 15px;
-    }
-}
-
 /* Begin card */
 .card-container {
     align-self: start;
@@ -71,7 +28,6 @@ body {
 }
 
 .text-container {
-    border-top: 1.5px solid black;
 }
 
 .text {

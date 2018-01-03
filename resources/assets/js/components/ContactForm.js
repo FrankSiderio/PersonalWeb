@@ -36,7 +36,6 @@ export default class ContactForm extends Component {
                 message: this.state.message,
             })
         }).then((response) => {
-            console.log(response.status);
             if(response.status == 201) {
                 ReactDOM.render(
                     <div className="alert alert-success">
@@ -51,16 +50,10 @@ export default class ContactForm extends Component {
                     message: ""
                 });
             }
+
             // It was a bad request so lets return the errors
             else if(response.status == 400) {
-                // TODO: Return errors to the view
-                console.log(response.json());
-                ReactDOM.render(
-                    <div className="alert alert-danger">
-                        It looks like something went wrong :(
-                        <a href="#" className="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    </div>
-                    , document.getElementById('status'));
+                return (response.json());
             }
 
             else {
@@ -71,16 +64,31 @@ export default class ContactForm extends Component {
                     </div>
                     , document.getElementById('status'));
             }
+
+        }).then((json) => {
+            if(json) {
+                console.log(json.error);
+                const errors = json.error;
+
+                for(var i = 0; i < errors.length; i++) {
+                    ReactDOM.render(
+                        <div className="alert alert-danger">
+                            {json.error[i].message}
+                            <a href="#" className="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        </div>
+                        , document.getElementById('status'));
+                }
+            }
         });
     }
 
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <input type="name" className="form-control" placeholder="Name" value={this.state.name} onChange={this.handleChange.bind(this, 'name')} />
-                <input type="email" className="form-control" placeholder="Email" value={this.state.email} onChange={this.handleChange.bind(this, 'email')} />
+                <input type="name" className="form-control" placeholder="Name" value={this.state.name} onChange={this.handleChange.bind(this, 'name')} required/>
+                <input type="email" className="form-control" placeholder="Email" value={this.state.email} onChange={this.handleChange.bind(this, 'email')} required/>
                 <textarea className="form-control message-box" placeholder="Feedback" value={this.state.message} onChange={this.handleChange.bind(this, 'message')} required></textarea>
-                <button type="submit" className="navy-btn btn-component">Send</button>
+                <button type="submit" className="button btn-component">Send</button>
             </form>
         );
     }
