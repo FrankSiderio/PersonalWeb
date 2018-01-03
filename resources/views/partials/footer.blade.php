@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ URL::asset('css/footer.css') }}">
 <footer class="footer col-md-12">
     <div class="col-md-6">
-        <h4>Importnat Links:</h4>
+        <h4>Important Links:</h4>
         <a href="/">Home</a><br>
         <a href="/about">About</a><br>
         <a href="/experience#Work">Work Experience</a><br>
