@@ -16,7 +16,6 @@ export default class Person extends Component {
         }).then((json) => {
             if(json) {
                 this.setState({person: json.person});
-                console.log(this.state.person[0].firstName);
             }
         });
     }

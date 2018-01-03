@@ -17,7 +17,7 @@
     </div>
 
     <div class="heading">
-        <h2 class="section-text">Some of my interests</h2>
+        <h2 class="section-text">Some of my interests.</h2>
     </div>
 
     <div id="interests" class="container section">

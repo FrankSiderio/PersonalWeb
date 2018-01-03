@@ -54502,7 +54502,6 @@ var Person = function (_Component) {
                                 }).then(function (json) {
                                     if (json) {
                                         _this2.setState({ person: json.person });
-                                        console.log(_this2.state.person[0].firstName);
                                     }
                                 });
 

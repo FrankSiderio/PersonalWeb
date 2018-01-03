@@ -22,6 +22,7 @@ nav {
     padding: 8px 32px;
     min-width: 150px;
     text-align: center;
+    color: black !important;
 }
 
 /* Overrides button text turning blue */
@@ -30,7 +31,7 @@ nav {
 }
 
 .button {
-    color: black;
+    color: black !important;
     background-color: transparent;
     border: 2px solid black;
 }
