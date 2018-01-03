@@ -14,10 +14,10 @@
 
     </div>
 
-    <div id="work-experience">
+    <div id="experiences-preview">
     </div>
 
-    <div id="projects">
+    <div id="projects-preview">
     </div>
 
     <div class="contact">
