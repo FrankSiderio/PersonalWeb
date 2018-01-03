@@ -54804,7 +54804,6 @@ var ContactForm = function (_Component) {
                     message: this.state.message
                 })
             }).then(function (response) {
-                console.log(response.status);
                 if (response.status == 201) {
                     __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'div',
@@ -54825,20 +54824,10 @@ var ContactForm = function (_Component) {
                         message: ""
                     });
                 }
+
                 // It was a bad request so lets return the errors
                 else if (response.status == 400) {
-                        // TODO: Return errors to the view
-                        console.log(response.json());
-                        __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            'div',
-                            { className: 'alert alert-danger' },
-                            'It looks like something went wrong :(',
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                'a',
-                                { href: '#', className: 'close', 'data-dismiss': 'alert', 'aria-label': 'close' },
-                                '\xD7'
-                            )
-                        ), document.getElementById('status'));
+                        return response.json();
                     } else {
                         __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             'div',
@@ -54851,6 +54840,24 @@ var ContactForm = function (_Component) {
                             )
                         ), document.getElementById('status'));
                     }
+            }).then(function (json) {
+                if (json) {
+                    console.log(json.error);
+                    var errors = json.error;
+
+                    for (var i = 0; i < errors.length; i++) {
+                        __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                            'div',
+                            { className: 'alert alert-danger' },
+                            json.error[i].message,
+                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                                'a',
+                                { href: '#', className: 'close', 'data-dismiss': 'alert', 'aria-label': 'close' },
+                                '\xD7'
+                            )
+                        ), document.getElementById('status'));
+                    }
+                }
             });
         }
     }, {
@@ -54859,8 +54866,8 @@ var ContactForm = function (_Component) {
             return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'form',
                 { onSubmit: this.handleSubmit },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'name', className: 'form-control', placeholder: 'Name', value: this.state.name, onChange: this.handleChange.bind(this, 'name') }),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'email', className: 'form-control', placeholder: 'Email', value: this.state.email, onChange: this.handleChange.bind(this, 'email') }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'name', className: 'form-control', placeholder: 'Name', value: this.state.name, onChange: this.handleChange.bind(this, 'name'), required: true }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'email', className: 'form-control', placeholder: 'Email', value: this.state.email, onChange: this.handleChange.bind(this, 'email'), required: true }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('textarea', { className: 'form-control message-box', placeholder: 'Feedback', value: this.state.message, onChange: this.handleChange.bind(this, 'message'), required: true }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'button',
