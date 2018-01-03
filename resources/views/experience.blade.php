@@ -21,13 +21,16 @@
         <h2 class="section-text">My work experience.</h2>
     </div>
 
+    <!-- Work Experience -->
     <div id="Wawa Inc" class="section">
         <div class="container">
             <div class="left-right">
                 <div class="content">
                     <h2 class="name">Developer at Wawa</h2>
-                    <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk fksldjfkfksldjfk fksldjfk fksldjfk fksldjfk fksldjfk fksldjfk fksldjfk.</p>
-                    <br><a class="button btn-component" target="_blank" href="https://play.google.com/store/apps/details?id=com.wawa.android.appv2&hl=en">See Work</a>
+                    <p>I was involved on the mobile android team. I worked with many developers on features and bug fixes. I even was apart of creating a test app for geofence testing. I gained experience with AWS, Android Studio, APIs, Java, and Retrofit.</p>
+                    <div class="button-container">
+                        <a class="button btn-component" target="_blank" href="https://play.google.com/store/apps/details?id=com.wawa.android.appv2&hl=en">See Work</a>
+                    </div>
                 </div>
 
                 <div class="image-container">
@@ -41,8 +44,10 @@
             <div class="left-right">
                 <div class="content">
                     <h2 class="name">CIO at Marist SGA</h2>
-                    <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk.</p>
-                    <br><a class="button btn-component" target="_blank" href="https://sga.marist.edu">See Work</a>
+                    <p>In Student Government I lead a team who are responsible for improving and supporting the software applications for SGA and Student Activities. My team has developers, QA Testers, Designers, etc. We work wil Linux, Apache, MySql, and PHP.</p>
+                    <div class="button-container">
+                        <a class="button btn-component" target="_blank" href="https://sga.marist.edu">See Work</a>
+                    </div>
                 </div>
 
                 <div class="image-container">
@@ -56,8 +61,10 @@
             <div class="left-right">
                 <div class="content">
                     <h2 class="name">Instructor at iD Tech</h2>
-                    <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk.</p>
-                    <br><a class="button btn-component" target="_blank" href="https://www.idtech.com/">See Work</a>
+                    <p>At iD Tech I was able to teach kids about technology. I taught classes on how to program with JavaScript. Creating different skins and models in minecraft. And my favorite I taught a Minecraft modding class.</p>
+                    <div class="button-container">
+                        <a class="button btn-component" target="_blank" href="https://www.idtech.com/">See Work</a>
+                    </div>
                 </div>
 
                 <div class="image-container">
@@ -66,18 +73,22 @@
             </div>
         </div>
     </div>
+    <!-- End Work Experience -->
 
     <div id="Projects" class="heading padding">
         <h2 class="section-text">My projects.</h2>
     </div>
 
+    <!-- Projects -->
     <div id="Operating System" class="section">
         <div class="container">
             <div class="left-right">
                 <div class="content">
                     <h2 class="name">Operating System</h2>
-                    <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk fksldjfkfksldjfk fksldjfk fksldjfk fksldjfk fksldjfk fksldjfk fksldjfk.</p>
-                    <br><a class="button btn-component" target="_blank" href="http://foxweb.marist.edu/users/frank.siderio1/">See Project</a>
+                    <p>This project was created throughout my fall 2016 semester in my Operating Systems class. We learned how OS's worked and we got to build one ourselves. My OS can run hex programs, write, read, and delete files, and can run multiple programs at once. I used TypeScript that compiles into JavaScript to create the OS.</p>
+                    <div class="button-container">
+                        <a class="button btn-component" target="_blank" href="http://foxweb.marist.edu/users/frank.siderio1/">See Project</a>
+                    </div>
                 </div>
 
                 <div class="image-container">
@@ -91,8 +102,10 @@
             <div class="left-right">
                 <div class="content">
                     <h2 class="name">Capping</h2>
-                    <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk.</p>
-                    <br><a class="button btn-component" target="_blank" href="https://letscoach.reev.us/">See Project</a>
+                    <p>My capping project was a semester long project that uses the LAMPP stack. The application is for life coaches who want to manage other coaches and clients. The application can store important information about a client as well as schedule meetings and set reminders. It also has the ability to be licensed to different life coach companies. The application was built using the Laravel framework.</p>
+                    <div class="button-container">
+                        <a class="button btn-component" target="_blank" href="https://letscoach.reev.us/">See Project</a>
+                    </div>
                 </div>
 
                 <div class="image-container">
@@ -106,8 +119,10 @@
             <div class="left-right">
                 <div class="content">
                     <h2 class="name">MLB Scoreboard</h2>
-                    <p>Description text jfkdsl fdjsklf djskfld jskfldsj fksldjfk.</p>
-                    <br><a class="button btn-component" target="_blank" href="https://github.com/FrankSiderio/mlb-scoreboard">See Project</a>
+                    <p>This project uses a Python script and the arduino kit to display MLB scores of the team the user enters in. I used an API to get the score and display it to the board. This was a fun project because I was able to integrate software and hardware. Also it was my first time using Python!</p>
+                    <div class="button-container">
+                        <a class="button btn-component" target="_blank" href="https://github.com/FrankSiderio/mlb-scoreboard">See Project</a>
+                    </div>
                 </div>
 
                 <div class="image-container">
@@ -116,10 +131,13 @@
             </div>
         </div>
     </div>
+    <!-- End Projects -->
 
-    <hr></hr>
 @endsection
 
 @section('js')
     <script src="{{asset('js/app.js')}}" ></script>
+    <script>
+
+    </script>
 @endsection

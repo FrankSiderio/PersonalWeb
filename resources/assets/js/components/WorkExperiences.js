@@ -27,20 +27,16 @@ export default class WorkExperiences extends Component {
 
     render() {
         return (
-            <div className="top-section">
-                <div className="heading">
-                    <h2 className="section-text">A little bit about what I do.</h2>
-                </div>
-                <div className="rule-of-thirds container">
-                    {this.state.experiences.map((exp, index) => {
-                        return <WorkExperience key={index} position={exp.position} company={exp.company} description={exp.preview} imagePath={exp.imagePath}/>
-                    })}
-                </div>
+            <div>
+                {this.state.experiences.map((exp, index) => {
+                    return <WorkExperience key={index} count={index} position={exp.position} company={exp.company} description={exp.description} imagePath={exp.imagePath} url={exp.url}/>
+                })}
             </div>
+
         );
     }
 }
 
-if (document.getElementById('work-experience')) {
-    ReactDOM.render(<WorkExperiences />, document.getElementById('work-experience'));
+if (document.getElementById('experiences')) {
+    ReactDOM.render(<WorkExperiences />, document.getElementById('experiences'));
 }

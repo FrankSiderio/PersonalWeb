@@ -7,14 +7,27 @@ export default class Project extends Component {
     }
 
     render() {
+        if(this.props.count % 2 == 0) {
+            var cName = "section";
+        } else {
+            var cName = "dark-section";
+        }
         return (
-            <div className="one-third">
-                <img className="img-responsive" src={this.props.imagePath}/>
+            <div id={this.props.name} className={cName}>
+                <div className="container">
+                    <div className="left-right">
+                        <div className="content">
+                            <h2 className="name">{this.props.name}</h2>
+                            <p>{this.props.description}</p>
+                            <div className="button-container">
+                                <a className="button btn-component" target="_blank" href={this.props.url}>See Project</a>
+                            </div>
+                        </div>
 
-                <div className="one-third-body">
-                    <h4 className="name">{this.props.name}</h4>
-                    <p className="description">{this.props.description}</p>
-                    <a className="button btn-component" href={'/experience/#' + this.props.name}>Learn More</a>
+                        <div className="image-container">
+                            <img className="img-responsive" src={this.props.imagePath}/>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

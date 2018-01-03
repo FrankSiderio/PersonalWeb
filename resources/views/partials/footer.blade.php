@@ -7,7 +7,8 @@
         <a href="/experience#Work">Work Experience</a><br>
         <a href="/experience#Projects">Projects</a><br>
         <a href="/contact">Contact</a><br>
-        <a target="_blank" href="../documents/Frank Siderio Resume.pdf">Resume</a>
+        <a target="_blank" href="../documents/Frank Siderio Resume.pdf">Resume</a><br>
+        <a target="_blank" href="https://github.com/FrankSiderio">GitHub</a>
     </div>
     <div class="col-md-6">
         <h4>This site was created with:</h4>

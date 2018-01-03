@@ -27,16 +27,12 @@ export default class Projects extends Component {
 
     render() {
         return (
-            <div className="bottom-section">
-                <div className="heading">
-                    <h2 className="section-text">And some projects I have worked on.</h2>
-                </div>
-                <div className="rule-of-thirds container">
-                    {this.state.projects.map((project, index) => {
-                        return <Project key={index} name={project.name} description={project.preview} imagePath={project.imagePath}/>
-                    })}
-                </div>
+            <div>
+                {this.state.projects.map((project, index) => {
+                    return <Project key={index} count={index} name={project.name} description={project.description} imagePath={project.imagePath} url={project.url}/>
+                })}
             </div>
+
         );
     }
 }
