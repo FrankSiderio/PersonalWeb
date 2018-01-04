@@ -12,7 +12,7 @@ export default class WorkExperiencesPreview extends Component {
     }
 
     async fetchExperiences() {
-        fetch('http://localhost:3333/api/work/1').then((response) => {
+        fetch('http://34.239.44.186:3333/api/work/1').then((response) => {
             return response.json();
         }).then((json) => {
             if(json) {
