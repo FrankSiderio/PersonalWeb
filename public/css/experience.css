@@ -1,16 +1,30 @@
+/* Left right grid section */
 .left-right {
+    /* I like grids they're easy to understand */
     display: grid;
 
+    /* One column for content and one for the image */
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
 @media (max-width: 650px) {
     .left-right {
+        /* Adjust to one column on smaller screens */
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* So the image displays above the content */
+    .content {
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 }
 
+/* Center all the text and give it some margins */
 .content {
     text-align: center;
     margin-left: 10px;
@@ -29,6 +43,7 @@
     padding: 30px;
 }
 
+/* We want the image to be positioned in the middle of the div */
 .image-container {
     padding: 20px;
     display: block;
