@@ -29,7 +29,7 @@ export default class Person extends Component {
         return (
             <div className="hero-text">
                 <h1>Hi, I'm Frank.</h1>
-                <h3 className="flavor-text">I am a computer science major from the Philadelphia area and an adovacate for all Philly sports. 🦅 🔔 ⚾ 🏒</h3>
+                <h3 className="flavor-text">I am a computer science major at Marist College. I currently reside in the Philadelphia area and an adovacate for all Philly sports. 🦅 🔔 ⚾ 🏒</h3>
             </div>
         )
     }

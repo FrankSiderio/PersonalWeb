@@ -1,4 +1,5 @@
 @extends('layout')
+    <title>Frank Siderio - Home</title>
 
 @section('css')
     <link href="{{ asset('css/index.css') }}" rel="stylesheet" type="text/css">

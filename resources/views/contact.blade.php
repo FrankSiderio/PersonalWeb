@@ -1,4 +1,5 @@
 @extends('layout')
+    <title>Frank Siderio - Contact</title>
 
 @section('css')
     <link href="{{ asset('css/form.css') }}" rel="stylesheet" type="text/css">
