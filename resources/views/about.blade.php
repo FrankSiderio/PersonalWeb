@@ -12,7 +12,7 @@
 
         <div class="hero-text">
             <h1>Who I Am.</h1>
-            <h3 class="flavor-text">I grew up going to the Jersey shore every summer but thats only one of my many interests. Scroll to see more.</h3>
+            <h3 class="flavor-text">I grew up going to the Jersey shore every summer, but that is only one of my many interests. Scroll to see more.</h3>
         </div>
 
     </div>
