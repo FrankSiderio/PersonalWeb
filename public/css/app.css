@@ -75,7 +75,7 @@ nav {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .flavor-text {
         margin-right: 17px;
         margin-left: 17px;
