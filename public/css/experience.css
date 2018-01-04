@@ -4,14 +4,14 @@
     display: grid;
 
     /* One column for content and one for the image */
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr; /* Cannot use repeat because it doesn't work on certain browswers *cough Edge */
     grid-gap: 20px;
 }
 
 @media (max-width: 650px) {
     .left-right {
         /* Adjust to one column on smaller screens */
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 
     /* So the image displays above the content */

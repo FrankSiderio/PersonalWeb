@@ -13,7 +13,7 @@ body {
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Can't use repeat because of certain browsers */
     grid-gap: 25px;
 }
 
@@ -25,9 +25,6 @@ body {
 .img-responsive {
     /* All images should be the same height...its important :)*/
     height: 250px !important;
-}
-
-.text-container {
 }
 
 .text {
@@ -46,7 +43,7 @@ body {
 @media (max-width: 1200px) {
     .card-container {
         /* Changing to three columns */
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .img-responsive {
@@ -63,14 +60,14 @@ body {
 @media (max-width: 700px) {
     .card-container {
         /* Changing to two columns */
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 470px) {
     .card-container {
         /* Changing to one column */
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 /* End card */
