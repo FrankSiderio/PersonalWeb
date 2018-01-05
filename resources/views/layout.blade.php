@@ -8,6 +8,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../images/liberty_bell.ico">
 
+        @if(App::environment('production'))
+            <!-- Only want analytics in production -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112007943-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-112007943-1');
+                </script>
+        @endif
         @yield('css')
     </head>
     @include('partials.nav')
