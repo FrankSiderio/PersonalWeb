@@ -24,7 +24,7 @@ export default class ContactForm extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        fetch('http://35.169.129.227:3333/api/feedback', {
+        fetch('http://franksiderio.me:3333/api/feedback', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -43,6 +43,25 @@ export default class ContactForm extends Component {
                         <a href="#" className="close" data-dismiss="alert" aria-label="close">&times;</a>
                     </div>
                     , document.getElementById('status'));
+
+
+                // Sending an email to myself so I know I got feedback
+                fetch('http://franksiderio.me/api/feedback/mail', {
+                    method: 'POST',
+                    headers: {
+                        Accept: 'application/json',
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: this.state.message,
+                        email: this.state.email,
+                    })
+                }).then((response) => {
+                    if(response.status != 200) {
+                        console.log("Failed to send email");
+                    }
+                })
+
                 // Clearing the input fields
                 this.setState({
                     name: "",

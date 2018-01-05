@@ -55172,7 +55172,7 @@ var ContactForm = function (_Component) {
             var _this2 = this;
 
             event.preventDefault();
-            fetch('http://35.169.129.227:3333/api/feedback', {
+            fetch('http://franksiderio.me:3333/api/feedback', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
@@ -55197,6 +55197,24 @@ var ContactForm = function (_Component) {
                             '\xD7'
                         )
                     ), document.getElementById('status'));
+
+                    // Sending an email to myself so I know I got feedback
+                    fetch('http://franksiderio.me/api/feedback/mail', {
+                        method: 'POST',
+                        headers: {
+                            Accept: 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            message: _this2.state.message,
+                            email: _this2.state.email
+                        })
+                    }).then(function (response) {
+                        if (response.status != 200) {
+                            console.log("Failed to send email");
+                        }
+                    });
+
                     // Clearing the input fields
                     _this2.setState({
                         name: "",
