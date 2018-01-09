@@ -12,7 +12,7 @@ export default class Projects extends Component {
     }
 
     async fetchProjects() {
-        fetch('https://franksiderio.me:3333/api/projects/1').then((response) => {
+        fetch('https://franksiderio.me/api/projects/1').then((response) => {
             return response.json();
         }).then((json) => {
             if(json) {
