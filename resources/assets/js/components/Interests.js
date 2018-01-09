@@ -12,7 +12,7 @@ export default class Interests extends Component {
     }
 
     async fetchInterests() {
-        fetch('http://franksiderio.me:3333/api/interests/1').then((response) => {
+        fetch('https://franksiderio.me:3333/api/interests/1').then((response) => {
             return response.json();
         }).then((json) => {
             if(json) {
