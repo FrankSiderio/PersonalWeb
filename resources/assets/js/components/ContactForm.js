@@ -24,7 +24,7 @@ export default class ContactForm extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        fetch('http://franksiderio.me:3333/api/feedback', {
+        fetch('https://franksiderio.me:3333/api/feedback', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -46,7 +46,7 @@ export default class ContactForm extends Component {
 
 
                 // Sending an email to myself so I know I got feedback
-                fetch('https://franksiderio.me/api/feedback/mail', {
+                fetch('https://franksiderio.me/feedback/mail', {
                     method: 'POST',
                     headers: {
                         Accept: 'application/json',

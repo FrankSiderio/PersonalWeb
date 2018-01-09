@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Mail\Feedback;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,8 +15,4 @@ use App\Mail\Feedback;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
-});
-
-Route::post('/feedback/mail', function(Request $request) {
-    \Mail::to('franksideriojr@gmail.com')->send(new Feedback($request->message, $request->email));
 });

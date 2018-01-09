@@ -1,5 +1,7 @@
 <?php
 
+use App\Mail\Feedback;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,4 +27,8 @@ Route::get('/about', function() {
 
 Route::get('/experience', function() {
     return view('experience');
+});
+
+Route::post('/feedback/mail', function(Request $request) {
+    \Mail::to('franksideriojr@gmail.com')->send(new Feedback($request->message, $request->email));
 });
