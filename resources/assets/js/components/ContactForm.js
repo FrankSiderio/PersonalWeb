@@ -24,7 +24,7 @@ export default class ContactForm extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        fetch('https://franksiderio.me:3333/api/feedback', {
+        fetch('http://franksiderio.me:3333/api/feedback', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',

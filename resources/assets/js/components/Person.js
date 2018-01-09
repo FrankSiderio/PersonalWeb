@@ -11,7 +11,7 @@ export default class Person extends Component {
     }
 
     async fetchPerson() {
-        fetch('https://franksiderio.me:3333/api/person/1').then((response) => {
+        fetch('http://franksiderio.me:3333/api/person/1').then((response) => {
             return response.json();
         }).then((json) => {
             if(json) {

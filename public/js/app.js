@@ -41677,7 +41677,7 @@ var WorkExperiencesPreview = function (_Component) {
                     while (1) {
                         switch (_context.prev = _context.next) {
                             case 0:
-                                fetch('https://franksiderio.me:3333/api/work/1').then(function (response) {
+                                fetch('http://franksiderio.me:3333/api/work/1').then(function (response) {
                                     return response.json();
                                 }).then(function (json) {
                                     if (json) {
@@ -54501,7 +54501,7 @@ var WorkExperiences = function (_Component) {
                     while (1) {
                         switch (_context.prev = _context.next) {
                             case 0:
-                                fetch('https://franksiderio.me:3333/api/work/1').then(function (response) {
+                                fetch('http://franksiderio.me:3333/api/work/1').then(function (response) {
                                     return response.json();
                                 }).then(function (json) {
                                     if (json) {
@@ -54690,7 +54690,7 @@ var Person = function (_Component) {
                     while (1) {
                         switch (_context.prev = _context.next) {
                             case 0:
-                                fetch('https://franksiderio.me:3333/api/person/1').then(function (response) {
+                                fetch('http://franksiderio.me:3333/api/person/1').then(function (response) {
                                     return response.json();
                                 }).then(function (json) {
                                     if (json) {
@@ -54801,7 +54801,7 @@ var ProjectsPreview = function (_Component) {
                     while (1) {
                         switch (_context.prev = _context.next) {
                             case 0:
-                                fetch('https://franksiderio.me:3333/api/projects/1').then(function (response) {
+                                fetch('http://franksiderio.me:3333/api/projects/1').then(function (response) {
                                     return response.json();
                                 }).then(function (json) {
                                     if (json) {
@@ -54981,7 +54981,7 @@ var Projects = function (_Component) {
                     while (1) {
                         switch (_context.prev = _context.next) {
                             case 0:
-                                fetch('https://franksiderio.me:3333/api/projects/1').then(function (response) {
+                                fetch('http://franksiderio.me:3333/api/projects/1').then(function (response) {
                                     return response.json();
                                 }).then(function (json) {
                                     if (json) {
@@ -55172,7 +55172,7 @@ var ContactForm = function (_Component) {
             var _this2 = this;
 
             event.preventDefault();
-            fetch('https://franksiderio.me:3333/api/feedback', {
+            fetch('http://franksiderio.me:3333/api/feedback', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
@@ -55967,7 +55967,7 @@ var Interests = function (_Component) {
                     while (1) {
                         switch (_context.prev = _context.next) {
                             case 0:
-                                fetch('https://franksiderio.me:3333/api/interests/1').then(function (response) {
+                                fetch('http://franksiderio.me:3333/api/interests/1').then(function (response) {
                                     return response.json();
                                 }).then(function (json) {
                                     if (json) {
